@@ -106,7 +106,7 @@ return { makeMove, getWinner, resetGame, getCurrentPlayer, getGameBoard}
 
 const displayScreen = () => {
     const player1 = Players("player 1", "X");
-    const player2 = Players("player 2", "O")
+    const player2 = Players("computer", "O")
     const game = Game(player1, player2);
 
     const boardDiv = document.getElementById("board");
