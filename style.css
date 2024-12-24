@@ -1,0 +1,114 @@
+
+body {
+   background-color: #d1fae5;
+   
+}
+.container {
+   display: grid;
+   grid-template-columns: minmax(200px, .55fr) minmax(500px, 2fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.sideBar {
+   grid-column: 1/2;
+   height: 100%;
+   width: 60%;
+   background-color: #0ea5e9;
+   border-top-left-radius: 90px;
+   border-top-right-radius: 90px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-wrap: wrap;
+   margin-left: 30px;
+   border-left: 15px solid #f472b6;
+
+}
+
+.mainContainer {
+   grid-column: 2/3;
+   display: grid;
+   grid-template-columns: .55fr 3fr .55r;
+   grid-template-rows: 1fr 3fr 1fr;
+   gap: 5px;
+   height: 100%;
+   width: 100%;
+justify-content: center;
+align-items: center;
+}
+.title {
+   grid-column: 1/3;
+   grid-row: 1/2;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.player1, .player2 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   padding: 10px 20px;
+   margin: 0;
+   position: relative;
+}
+.player1 {
+   grid-column: 1/2; /* Player 1 in the left column */
+   grid-row: 2/3; /* Same row as the board */
+}
+
+.player2 {
+   grid-column: 3/4; /* Player 2 in the right column */
+   grid-row: 2/3; /* Same row as the board */
+}
+
+.board {
+   grid-column: 2/3;
+   grid-row: 2/3;
+height: 400px;
+width: 400px;
+background-color: beige;
+margin: 0;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr);
+border: 5px solid black;
+}
+.cell {
+   background-color: #0ea5e9;
+
+   border: 1px solid black;
+   gap: 5px;
+   font-size: 5rem; /* Make the font large enough */
+    font-weight: bold; /* Makes X and O bold */
+    color: black;
+}
+                                                                                                                                                                                                                   
+.buttons {
+   grid-column: 1/3;
+   grid-row: 3/4;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   align-items: center;
+}
+
+.btn1 {
+   background-color: aliceblue;
+   border: none;
+   border-radius: 20px;
+   width: 150px;
+   height: 50px;
+   font-size: 20px;
+}
+.btn2 {
+   background-color: red;
+   border: none;
+   border-radius: 50px;
+   width: 150px;
+   height: 50px;
+   font-size: 20px;
+
+}
